@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
               playsInline
               className="w-full h-full object-cover opacity-50 mix-blend-screen"
             >
-              <source src={`${import.meta.env.BASE_URL}My Portrait 2.mp4`} type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}hero-video.mp4`} type="video/mp4" />
             </video>
           </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]" />

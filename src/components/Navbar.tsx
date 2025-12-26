@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
       >
         {/* Logo */}
         <a href="#home" className="z-50">
-          <img src={`${import.meta.env.BASE_URL}muhsin icon.svg`} alt="Muhsin MYou" className="h-12 w-auto hover:opacity-80 transition-opacity duration-300" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Muhsin MYou" className="h-12 w-auto hover:opacity-80 transition-opacity duration-300" />
         </a>
 
         {/* Desktop Links */}
