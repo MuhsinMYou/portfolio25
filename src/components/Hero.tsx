@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
         {/* Cinematic Background Layer */}
         <div className="absolute inset-0 z-0">
-          <motion.div style={{ scale, y: yImage }} className="w-full h-full">
+          <motion.div style={{ scale, y: yImage }} className="w-full h-full bg-gradient-to-br from-[#2a1e16] to-black">
             <video
               autoPlay
               loop
