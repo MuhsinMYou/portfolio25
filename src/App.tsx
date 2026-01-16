@@ -67,7 +67,7 @@ function App() {
         <Hero />
 
         {/* Adds visual separation/breathing room */}
-        <div className="space-y-12">
+        <div className="space-y-4">
           <Expertise />
           <div id="recent-works">
             <RecentWorks />

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram, FileText } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -43,9 +43,9 @@ const Hero: React.FC = () => {
     <section
       id="home"
       ref={containerRef}
-      className="relative h-[130vh] w-full overflow-hidden"
+      className="relative h-screen w-full overflow-hidden"
     >
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center">
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
 
         {/* Cinematic Background Layer */}
         <div className="absolute inset-0 z-0">
@@ -128,11 +128,26 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 1 }}
-              className="flex gap-5 mt-6"
+              className="flex flex-col items-center gap-6 mt-8"
             >
-              <SocialLink href="https://github.com/MuhsinMYou" icon={Github} />
-              <SocialLink href="https://linkedin.com/in/muhsinponpara" icon={Linkedin} />
-              <SocialLink href="https://instagram.com/muhhs.in" icon={Instagram} />
+              <motion.a
+                href="https://docs.google.com/document/d/17pjw9DSRUEwOTP3Bbr351W8CKXMdVoo72HQi08Vx20M/export?format=pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative inline-flex items-center gap-2 px-8 py-3 bg-[#8B5E3C] text-white font-medium rounded-full overflow-hidden shadow-lg hover:shadow-primary/25 transition-all"
+              >
+                <FileText className="w-4 h-4" />
+                <span>View Resume</span>
+                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+              </motion.a>
+
+              <div className="flex gap-5">
+                <SocialLink href="https://github.com/MuhsinMYou" icon={Github} />
+                <SocialLink href="https://linkedin.com/in/muhsinponpara" icon={Linkedin} />
+                <SocialLink href="https://instagram.com/muhhs.in" icon={Instagram} />
+              </div>
             </motion.div>
           </div>
 

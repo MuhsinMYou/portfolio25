@@ -56,13 +56,14 @@ export const PROJECTS: ProjectItem[] = [
 ];
 
 export const RECENT_WORKS = [
-  "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1635326444826-06c8f85d2634?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop",
+  `${import.meta.env.BASE_URL}works/Adsin League.png`,
+  `${import.meta.env.BASE_URL}works/Adsin-Xmas-25-Post.png`,
+  `${import.meta.env.BASE_URL}works/Diwali Poster 25 storywqqqswwdxw.png`,
+  `${import.meta.env.BASE_URL}works/Stranger Things Adsin.png`,
+  `${import.meta.env.BASE_URL}works/adsin 2 copy.png`,
+  `${import.meta.env.BASE_URL}works/branding - 4444 (2).png`,
+  `${import.meta.env.BASE_URL}works/kalamkaval adsin.png`,
+  `${import.meta.env.BASE_URL}works/kerala piravi adsin31.png`,
 ];
 
 export const TIMELINE: TimelineItem[] = [

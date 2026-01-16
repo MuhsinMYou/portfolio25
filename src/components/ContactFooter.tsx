@@ -19,23 +19,9 @@ const ContactFooter: React.FC = () => {
 
         <motion.a
           href="mailto:contact@muhsin.dev"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          animate={{
-            boxShadow: ["0px 0px 0px rgba(255, 107, 0, 0)", "0px 0px 30px rgba(255, 107, 0, 0.5)", "0px 0px 0px rgba(255, 107, 0, 0)"]
-          }}
-          transition={{
-            boxShadow: {
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            },
-            scale: { duration: 0.3 },
-            opacity: { duration: 0.5 }
-          }}
-          className="group relative inline-flex items-center px-8 py-4 bg-primary text-black font-bold text-lg rounded-full overflow-hidden"
+          whileTap={{ scale: 0.95 }}
+          className="group relative inline-flex items-center px-8 py-4 bg-[#8B5E3C] text-white font-bold text-lg rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all"
         >
           <span className="relative z-10 flex items-center gap-2">
             Let's Talk <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

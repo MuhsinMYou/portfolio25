@@ -5,7 +5,7 @@ import { ExpertiseItem } from '../types';
 
 const Expertise: React.FC = () => {
   return (
-    <section id="expertise" className="relative py-32 px-6 md:px-12 lg:px-24">
+    <section id="expertise" className="relative py-20 px-6 md:px-12 lg:px-24">
       {/* Section Header */}
       <div className="mb-16 relative z-10">
         <h2 className="text-sm font-mono text-secondary tracking-widest uppercase mb-2">My Services</h2>
